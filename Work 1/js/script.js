@@ -1,6 +1,32 @@
 'use strict';
 //Объявляем глобальные переменные
 let budget,time;
+//Выбор элементов DOM
+let budgetValue = document.querySelectorAll('.result-table [class$="value"]')[0],
+    dayBudgetValue = document.querySelectorAll('.result-table [class$="value"]')[1],
+    levelValue = document.querySelectorAll('.result-table [class$="value"]')[2],
+    expensesValue = document.querySelectorAll('.result-table [class$="value"]')[3],
+    optionalexpensesValue = document.querySelectorAll('.result-table [class$="value"]')[4],
+    incomeValue = document.querySelectorAll('.result-table [class$="value"]')[5],
+    monthSavingValue = document.querySelectorAll('.result-table [class$="value"]')[6],
+    yearsSavingValue = document.querySelectorAll('.result-table [class$="value"]')[7],
+
+    expensesItem = document.querySelectorAll('.expenses-item'),
+    optionalExpensesItem = document.querySelectorAll('.optionalexpenses-item'),
+
+    btnExpensesRequired = document.querySelectorAll('button')[0],
+    btnExpensesOptional = document.querySelectorAll('button')[1],
+    btnBudgetCalc = document.querySelectorAll('button')[2],
+    btnStartCalc = document.getElementById('start'),
+
+    chooseIncome = document.querySelector('#income'),
+    checkBoxSavings = document.querySelector('#savings'),
+    chooseSum = document.querySelector('#sum'),
+    choosePercent = document.querySelector('#percent'),
+    year = document.querySelector('.year-value'),
+    month = document.querySelector('.month-value'),
+    day = document.querySelector('.day-value');
+
 //Фунцкия определения бюджета и даты
 function start() {
   budget = 5000; //parseInt( prompt('Ваш бюджет на месяц', '') );
@@ -88,6 +114,7 @@ let appData = {
       alert('Cпособы доп зароботка : \n' + rezultStr);
     }
 };
-for (let keys in appData) {
-  console.log(keys+ ': ' + appData[keys]);
-}
+//Перебор ключей и данных объекта
+// for (let keys in appData) {
+//   console.log(keys+ ': ' + appData[keys]);
+// }
