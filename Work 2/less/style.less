@@ -231,6 +231,29 @@ header {
 			margin-top: 40px;
 			font-size: 90px;
 			color: @main-color;
+			.days, .hours, .minutes, .seconds {
+				position: relative;
+				&::before {
+					position: absolute;
+					font-size: 20px;
+				}
+			}
+			.days::before {
+				content: 'DAYS';
+				left: calc(50% - 26px);
+			}
+			.hours::before {
+				content: 'HOURS';
+				left: calc(50% - 35px);
+			}
+			.minutes::before {
+				content: 'MINUTES';
+				left: calc(50% - 45px);
+			}
+			.seconds::before {
+				content: 'SECONDS';
+				left: calc(50% - 46px);
+			}
 			&:after {
 				content: '';
 				display: block;
