@@ -11,20 +11,20 @@ window.addEventListener('DOMContentLoaded', () => { //Сначала загру�
     for (let i = 0; i < btnDesc.length; i++) {
         btnDesc[i].addEventListener('click', () => {
             overlay.style.display = 'block';
-            this.classList.add('more-splash');
+           // this.classList.add('more-splash');
             document.body.style.overflow = 'hidden';
         });
     }
 
     more.addEventListener('click', () => {
         overlay.style.display = 'block';
-        this.classList.add('more-splash');
+        //this.classList.add('more-splash');
         document.body.style.overflow = 'hidden';
     });
 
     close.addEventListener('click', () => {
         overlay.style.display = 'none';
-        more.classList.remove('more-splash');
+        //more.classList.remove('more-splash');
         document.body.style.overflow = '';
     });
 

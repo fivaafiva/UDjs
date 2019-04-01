@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => { //Сначала загру�
 
     'use strict';
 
-    let deadline = '2019-02-22T01:20:50'; //вводим дату 
+    let deadline = '2019-06-22T01:20:50'; //вводим дату 
     
     function getTimeRemaning (endtime) {  // Функция определения даты
         let t = Date.parse(endtime) - Date.parse( new Date() ),
