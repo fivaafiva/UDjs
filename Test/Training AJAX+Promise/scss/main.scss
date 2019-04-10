@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #f8f8f8;
+}
+.container {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1024px;
+    margin: 0 auto;
+    h1{
+        text-align: center;
+        margin: 0;
+    }
+    form {
+        width: 300px;
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            input {
+                margin-left: 10px;
+            }
+            #RUB {
+                margin-top:10px;
+            }
+        }
+    }
+}
